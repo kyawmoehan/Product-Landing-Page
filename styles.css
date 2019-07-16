@@ -1,0 +1,361 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+#page-wrapper {
+    position: relative;
+    background-color: #EEEEEE;
+}
+
+
+/* image responsive*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(8, 58, 85);
+    text-decoration: none;
+}
+
+
+/* header */
+
+.logo {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo p {
+    font-size: 3.3rem;
+    color: #DE6147;
+}
+
+.logo img {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    min-height: 75px;
+    padding: 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+nav ul {
+    font-size: 2.2rem;
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* seo */
+
+.seo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/* features */
+
+#features img {
+    width: 80px;
+    height: 80px;
+    justify-self: center;
+}
+
+#features h2 {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+
+#features p {
+    font-size: 1.7rem;
+}
+
+#features {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 50px 0.7fr 2fr 50px;
+    grid-gap: 30px 50px;
+    grid-template-areas: ". mobile mobile-c ." ". speed speed-c ." ". onpage onpage-c ." ". offpage offpage-c .";
+}
+
+[alt="Mobile"] {
+    grid-area: mobile;
+}
+
+.mobile-c {
+    grid-area: mobile-c;
+}
+
+[alt="Page Speed"] {
+    grid-area: speed;
+}
+
+.speed-c {
+    grid-area: speed-c;
+}
+
+[alt="On-page seo"] {
+    grid-area: onpage;
+}
+
+.onpage-c {
+    grid-area: onpage-c;
+}
+
+[alt="Off-page seo"] {
+    grid-area: offpage;
+}
+
+.offpage-c {
+    grid-area: offpage-c;
+}
+
+
+/* pricning */
+
+.card {
+    border: 1px solid #000;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border-radius: 3px;
+    margin-top: 40px;
+    background-color: #EEEEEE;
+}
+
+div.plan {
+    background-color: #DDDDDD;
+}
+
+#pricing ol {
+    list-style-type: none;
+}
+
+#pricing .plan {
+    font-size: 3rem;
+}
+
+#pricing h3 {
+    font-size: 2.5rem;
+    margin: 22px auto;
+}
+
+#pricing ol li {
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+#pricing .btn {
+    font-size: 2rem;
+    padding: 8px 25px;
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+#pricing .btn:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+#pricing {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+
+/* about */
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-works iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+
+/* contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    margin-top: 40px;
+}
+
+#contact h2 {
+    margin: 20px auto;
+    font-size: 3rem;
+}
+
+#contact input[type="email"] {
+    min-width: 250px;
+    width: 100%;
+    padding: 5px;
+}
+
+#contact input[type="submit"] {
+    font-size: 1.8rem;
+    font-weight: bold;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+    color: #444;
+}
+
+
+/* responsive */
+
+@media (max-width: 750px) {
+    .logo {
+        margin-top: 15px;
+        position: relative;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 80px;
+    }
+    nav li {
+        padding-bottom: 5px;
+    }
+    .seo {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #features {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 5px 0.7fr 2fr 5px;
+        grid-gap: 30px 50px;
+        grid-template-areas: ". mobile mobile-c ." ". speed speed-c ." ". onpage onpage-c ." ". offpage offpage-c .";
+    }
+    #features img {
+        justify-self: center;
+    }
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px auto;
+    }
+    .card {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 50px;
+        margin: 0 auto;
+    }
+    .logo p {
+        font-size: 2.5rem;
+        color: #DE6147;
+        margin: 0 auto;
+    }
+    #features {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2px 2fr 2px;
+        grid-gap: 30px 50px;
+        grid-column-gap: 13px;
+        grid-template-areas: ". mobile-c ." ". speed-c ." ". onpage-c ." ". offpage-c .";
+    }
+    #features img {
+        display: none;
+    }
+    #features h2 {
+        text-align: center;
+    }
+    #features p {
+        text-align: center;
+    }
+    footer {
+        margin: 30px 0px 0px;
+    }
+}
